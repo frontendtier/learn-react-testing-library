@@ -1,0 +1,57 @@
+{
+  "name": "rtl-course",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.0.1",
+    "@testing-library/user-event": "^14.1.1",
+    "daisyui": "^2.13.6",
+    "json-server": "^0.17.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start:server": "node db.js",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "test": "react-scripts test",
+    "test:jest-dom": "yarn test -- pages/Product/tests/jest-dom/jest-dom.test.js",
+    "test:jest": "yarn test -- pages/Product/tests/jest/jest.test.js",
+    "test:querying-elements": "yarn test -- pages/Product/tests/querying-elements/querying-elements.test.js",
+    "test:query-types": "yarn test -- pages/Product/tests/query-types/query-types.test.js",
+    "test:firing-events": "yarn test -- pages/Product/tests/firing-events/firing-events.test.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(js|jsx|cjs)$": "babel-jest"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "msw": "^0.43.1",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.24"
+  }
+}
