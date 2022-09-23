@@ -11,7 +11,6 @@ const Checkout = ({ items }) => {
     const [cartItems, setCartItems] = useState(items);
     const [status, setStatus] = useState();
     
-
     const handleComplete = (success) => {
         if (success) {
             setStatus("SUCCESS");
@@ -28,7 +27,6 @@ const Checkout = ({ items }) => {
                 </>
             )}
             <div className="grid grid-cols-8 gap-16 mt-6">
-                
                 <div className="col-span-3">
                     <CartList items={cartItems} onUpdate={(items) => setCartItems(items)} /> 
                 </div>

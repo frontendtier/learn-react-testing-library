@@ -1,1 +1,1 @@
-import Checkbox from "./Checkout";
+import Checkout from "./Checkout";
